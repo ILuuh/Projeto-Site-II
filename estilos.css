@@ -1,0 +1,287 @@
+:root{ /* Custom Properties */
+   --azul: rgb(0, 24, 69);
+   --azulc: rgb(0,80,120);
+   --amarelo: rgb(245, 180, 0);
+   --azulcc: rgb(4, 102, 200);
+
+   --cinza100: rgb(100,100,100);
+   --cinza220: rgb(220,220,220);
+   --cinza230: rgb(230,230,230);
+   --cinza240: rgb(240,240,240);
+   --cinza245: rgb(245,245,245);
+}
+
+
+*{ 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Montserrat", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+}
+
+body{
+   background-color: var(--cinza240);
+}
+
+a{
+   text-decoration: none;
+}
+
+header{
+   height: 4rem; /* altura do elemento */
+   background-image: linear-gradient(135deg, var(--azul), var(--azulc)); /* cor de fundo */
+   display: flex; /* transformar em caixa flexível */
+   flex-direction: row; /* direção dos filhos */
+   align-items: center; /* alinhamento na vertical*/
+   justify-content: space-between; /* alinhamento na horizontal*/
+   padding: 0 5%; /* margem interna */
+}
+
+header .logo{
+   height: 70%; /* altura do elemento */
+}
+
+header a{
+   color: white;
+   transition: color 0.5s;
+}
+
+header a:hover{
+   color: var(--amarelo);
+}
+
+header nav{
+   display: flex;
+   align-items: center;
+   gap: 0.5rem; /* Espaçamento entre filhos */
+}
+
+header .topoMenu{
+   display: none;
+}
+
+header .botaoMenu{
+   height: 2.5rem;
+   width: 3rem;
+   background-color: transparent;
+   border: none;
+   border-radius: 5px;
+   display: none;
+   flex-direction: column;
+   gap: 0.4rem;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: background 0.5s;
+}
+
+header .creditosMenu{
+   display: none;
+}
+
+header .botaoMenu div{
+   height: 3px;
+   width: 60%;
+   background-color: white;
+   border-radius: 50px;
+   transition: background 0.5s, transform 0.5s;
+}
+
+header .botaoMenu:hover div{
+   background-color: var(--amarelo);
+}
+
+header .botaoMenu:hover .ret1{
+   transform: translateX(-0.2rem);
+}
+
+header .botaoMenu:hover .ret2{
+   transform: translateX(0.2rem);
+}
+
+header .botaoMenu:hover .ret3{
+   transform: translateX(-0.3rem);
+}
+
+.slogan{
+   background-color: var(--cinza230);
+   text-align: center;
+   height: 3rem;
+   padding: 0 5%;
+   color: var(--azul);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.secaoBanner{
+   background-image: url(img/banner.jpg); /* Importando uma imagem da minha pasta img */
+   background-repeat: no-repeat; /* Controla as repeticões dessa imagem */
+   background-size: cover; /* Definindo o tamanho da imagem, no caso está cover que quer dizer sempre cobrir a página */
+   background-position: center; /* qual a posição que a imagem deve ficar */
+   height: calc(100vh - 7rem); /* editando para que a seção pegue o resto que está sobrando da página */
+   padding: 3rem 5%; /* para ficar alinhado com a logo */
+   display: flex; /* Para controlar os filho (h1, p, ....) */
+   align-items: center; /* Alinhar ao centro na vertical */
+}
+
+.textoDestaque{
+   font-size: 4rem;
+}
+
+.secaoBanner .textos{
+   width: min(50rem, 100%); /* o Min permite usar dois valores e sempre usará o menor valor que ele tem disponível */
+   background-color: rgba(255, 255, 255, 0.7); /* rgba serve para definir opacidade(transparência) além da cor */
+   padding: 2rem;
+   border: 2px solid white;
+   border-radius: 20px;
+}
+
+.secaoBanner .textos h1{
+   margin-bottom: 1rem;
+   color: var(--azulc);
+}
+
+.indexPrincipal{
+   display: flex;
+   gap: 2rem;
+   padding: 2rem 5%;
+}
+
+.indexPrincipal .ladoEsquerdo{
+   width: 25%;
+}
+
+.indexPrincipal .ladoDireito{
+   width: 75%;
+}
+
+.containerProdutos{
+   display: flex;
+   flex-wrap: wrap; /* Permissão para pai descer ou não linha */
+   gap: 1rem;
+   margin: 1.5rem 0;
+}
+
+.containerProdutos .card{
+   width: calc(33% - 1rem);
+   background-color: white;
+   border-radius: 20px;
+   overflow: hidden; /* Configura para esconder caso os filhos excedam o tamanho do pai */
+   /* flex-shrink: 0; Capacidade de tamanho pelo flex, para não ser influenciado pelo flex e diminuir o tamanho */
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   /* Sombra para caixa - sequencia de 3 valores, 1 valor: dislocamento (-)esquerda ou (+)direita / 
+   2 valor: dislocamento (-)cima ou (+)baixo / 3 valor: Desfoque / 4 valor:Cor */
+   transition: box-shadow 0.5s;
+}
+
+.containerProdutos .card:hover{
+   box-shadow: 0 20px 25px rgba(0, 24, 69, 0.5);
+}
+
+.containerProdutos .card img{
+   width: 100%;
+}
+
+.containerProdutos .card .tituloProduto{
+   margin: 1rem 1rem 0.5rem 1rem;
+   color: var(--azulcc);
+}
+
+.containerProdutos .card .precoProduto{
+   margin: 0 1rem 1rem 1rem;
+}
+
+footer{
+   background-color: var(--azul);
+   padding: 1rem 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+footer p{
+   color: white;
+}
+
+@media screen and (max-width: 950px){ /* Esse grupo defini propriedades específicas para a largura de 950px */
+
+   header .botaoMenu{
+      display: flex;
+   }
+
+   header nav{
+      position: fixed;
+      background-color: var(--cinza245);
+      top: 0;
+      bottom: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      padding: 3rem; /* Margem interna */
+      width: 100%;
+      right: -100%;
+      transition: right 0.5s;
+      z-index: 1;
+   }
+
+   header .topoMenu{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 1rem;
+   }
+
+   header .fecharMenu{
+      border: none;
+      background-color: transparent;
+      color: var(--azulcc);
+      cursor: pointer;
+   }
+
+   header .creditosMenu{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-top: 2rem;
+   }
+
+   header a{
+      color: var(--cinza100);
+   }
+   
+   header a:hover{
+      color: var(--azulc);
+   }
+
+   header nav a{
+      border-bottom: 1px solid var(--cinza220);
+      display: flex;
+      width: 100%;
+      padding: 1rem;
+      transition: background 0.5s;
+   }
+
+   header nav a:hover{
+      background-color: white;
+   }
+
+   .textoDestaque{
+      font-size: 2rem;
+   }
+
+   .indexPrincipal{
+      flex-direction: column;
+   }
+
+   .indexPrincipal .ladoEsquerdo,
+   .indexPrincipal .ladoDireito{
+      width: 100%;
+   }
+
+}
+
