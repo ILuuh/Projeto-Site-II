@@ -1,287 +1,490 @@
-:root{ /* Custom Properties */
+/* Definindo as propriedades personalizadas (variáveis) no :root */
+:root {
    --azul: rgb(0, 24, 69);
-   --azulc: rgb(0,80,120);
-   --amarelo: rgb(245, 180, 0);
+   --azulc: rgb(0, 80, 120);
    --azulcc: rgb(4, 102, 200);
-
-   --cinza100: rgb(100,100,100);
-   --cinza220: rgb(220,220,220);
-   --cinza230: rgb(230,230,230);
-   --cinza240: rgb(240,240,240);
-   --cinza245: rgb(245,245,245);
+   --amarelo: rgb(245, 180, 0);
+   --cinza100: rgb(100, 100, 100);
+   --cinza200: rgb(200, 200, 200);
+   --cinza220: rgb(220, 220, 220);
+   --cinza230: rgb(230, 230, 230);
+   --cinza240: rgb(240, 240, 240);
+   --cinza245: rgb(245, 245, 245);
 }
 
-
-*{ 
+/* Resetando margens e paddings e definindo fontes globais */
+* {
    margin: 0;
+   /* Remove as margens padrão de todos os elementos */
    padding: 0;
+   /* Remove o padding (preenchimento interno) padrão */
    box-sizing: border-box;
+   /* Ajusta o box model para incluir bordas e padding no cálculo do tamanho do elemento */
    font-family: "Montserrat", serif;
+   /* Define a fonte padrão para o site */
    font-optical-sizing: auto;
+   /* Ajusta a fonte conforme o tamanho da tela */
    font-weight: 400;
+   /* Define o peso da fonte (normal) */
    font-style: normal;
+   /* Define o estilo da fonte como normal */
 }
 
-body{
+/* Estilizando o corpo da página */
+body {
    background-color: var(--cinza240);
+   /* Cor de fundo usando a variável --cinza240 */
 }
 
-a{
+/* Removendo o sublinhado de links */
+a {
    text-decoration: none;
+   /* Remove o sublinhado dos links */
 }
 
-header{
-   height: 4rem; /* altura do elemento */
-   background-image: linear-gradient(135deg, var(--azul), var(--azulc)); /* cor de fundo */
-   display: flex; /* transformar em caixa flexível */
-   flex-direction: row; /* direção dos filhos */
-   align-items: center; /* alinhamento na vertical*/
-   justify-content: space-between; /* alinhamento na horizontal*/
-   padding: 0 5%; /* margem interna */
-}
-
-header .logo{
-   height: 70%; /* altura do elemento */
-}
-
-header a{
-   color: white;
-   transition: color 0.5s;
-}
-
-header a:hover{
-   color: var(--amarelo);
-}
-
-header nav{
+/* Estilos para o header (cabeçalho) */
+header {
+   height: 4rem;
+   /* Define a altura do cabeçalho */
+   background-image: linear-gradient(135deg, var(--azul), var(--azulc));
+   /* Gradiente de cor no fundo */
    display: flex;
+   /* Usando flexbox para organizar os itens no cabeçalho */
+   flex-direction: row;
+   /* Organiza os itens na horizontal (linha) */
    align-items: center;
-   gap: 0.5rem; /* Espaçamento entre filhos */
-}
-
-header .topoMenu{
-   display: none;
-}
-
-header .botaoMenu{
-   height: 2.5rem;
-   width: 3rem;
-   background-color: transparent;
-   border: none;
-   border-radius: 5px;
-   display: none;
-   flex-direction: column;
-   gap: 0.4rem;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
-   transition: background 0.5s;
-}
-
-header .creditosMenu{
-   display: none;
-}
-
-header .botaoMenu div{
-   height: 3px;
-   width: 60%;
-   background-color: white;
-   border-radius: 50px;
-   transition: background 0.5s, transform 0.5s;
-}
-
-header .botaoMenu:hover div{
-   background-color: var(--amarelo);
-}
-
-header .botaoMenu:hover .ret1{
-   transform: translateX(-0.2rem);
-}
-
-header .botaoMenu:hover .ret2{
-   transform: translateX(0.2rem);
-}
-
-header .botaoMenu:hover .ret3{
-   transform: translateX(-0.3rem);
-}
-
-.slogan{
-   background-color: var(--cinza230);
-   text-align: center;
-   height: 3rem;
+   /* Alinha os itens no centro verticalmente */
+   justify-content: space-between;
+   /* Distribui os itens com espaço igual entre eles */
    padding: 0 5%;
-   color: var(--azul);
+   /* Define o preenchimento interno nas laterais do cabeçalho */
+}
+
+/* Estilizando a logo no cabeçalho */
+header .logo {
+   height: 70%;
+   /* Define a altura da logo como 70% da altura do cabeçalho */
+}
+
+/* Estilos para os links dentro do header */
+header a {
+   color: white;
+   /* Define a cor do texto como branco */
+   transition: color 0.5s;
+   /* Adiciona uma transição suave de 0.5s na cor do link */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+header a:hover {
+   color: var(--amarelo);
+   /* Muda a cor do texto para amarelo quando o mouse passa sobre o link */
+}
+
+/* Estilos para o menu no cabeçalho */
+header nav {
    display: flex;
+   /* Usa flexbox para organizar os itens dentro do menu */
    align-items: center;
+   /* Alinha os itens verticalmente no centro */
+   gap: 0.5rem;
+   /* Define o espaçamento entre os itens do menu */
+}
+
+/* Menu mobile escondido por padrão */
+header .topoMenu {
+   display: none;
+   /* Esconde o menu de topo (provavelmente será mostrado em dispositivos móveis) */
+}
+
+/* Estilizando o botão de menu (hamburguer) */
+header .botaoMenu {
+   height: 2.5rem;
+   /* Altura do botão de menu */
+   width: 3rem;
+   /* Largura do botão de menu */
+   background-color: transparent;
+   /* Fundo transparente */
+   border: none;
+   /* Sem borda */
+   border-radius: 5px;
+   /* Bordas arredondadas */
+   display: none;
+   /* Esconde o botão por padrão */
+   flex-direction: column;
+   /* Organiza os itens dentro do botão em coluna */
+   gap: 0.4rem;
+   /* Espaço entre as "barrinhas" do botão */
+   align-items: center;
+   /* Alinha as "barrinhas" no centro */
    justify-content: center;
+   /* Justifica o conteúdo no centro */
+   cursor: pointer;
+   /* Muda o cursor para a mãozinha ao passar sobre o botão */
+   transition: background 0.5s;
+   /* Adiciona transição suave no fundo ao passar o mouse */
 }
 
-.secaoBanner{
-   background-image: url(img/banner.jpg); /* Importando uma imagem da minha pasta img */
-   background-repeat: no-repeat; /* Controla as repeticões dessa imagem */
-   background-size: cover; /* Definindo o tamanho da imagem, no caso está cover que quer dizer sempre cobrir a página */
-   background-position: center; /* qual a posição que a imagem deve ficar */
-   height: calc(100vh - 7rem); /* editando para que a seção pegue o resto que está sobrando da página */
-   padding: 3rem 5%; /* para ficar alinhado com a logo */
-   display: flex; /* Para controlar os filho (h1, p, ....) */
-   align-items: center; /* Alinhar ao centro na vertical */
+/* Menu de créditos escondido */
+header .creditosMenu {
+   display: none;
+   /* Esconde a seção de créditos */
 }
 
-.textoDestaque{
-   font-size: 4rem;
-}
-
-.secaoBanner .textos{
-   width: min(50rem, 100%); /* o Min permite usar dois valores e sempre usará o menor valor que ele tem disponível */
-   background-color: rgba(255, 255, 255, 0.7); /* rgba serve para definir opacidade(transparência) além da cor */
-   padding: 2rem;
-   border: 2px solid white;
-   border-radius: 20px;
-}
-
-.secaoBanner .textos h1{
-   margin-bottom: 1rem;
-   color: var(--azulc);
-}
-
-.indexPrincipal{
-   display: flex;
-   gap: 2rem;
-   padding: 2rem 5%;
-}
-
-.indexPrincipal .ladoEsquerdo{
-   width: 25%;
-}
-
-.indexPrincipal .ladoDireito{
-   width: 75%;
-}
-
-.containerProdutos{
-   display: flex;
-   flex-wrap: wrap; /* Permissão para pai descer ou não linha */
-   gap: 1rem;
-   margin: 1.5rem 0;
-}
-
-.containerProdutos .card{
-   width: calc(33% - 1rem);
+/* Estilos para as "barrinhas" do botão de menu */
+header .botaoMenu div {
+   height: 3px;
+   /* Altura das barrinhas */
+   width: 60%;
+   /* Largura das barrinhas */
    background-color: white;
+   /* Cor das barrinhas */
+   border-radius: 50px;
+   /* Arredonda as barrinhas */
+   transition: background 0.5s, transform 0.5s;
+   /* Transição suave na cor e no movimento */
+}
+
+/* Efeito de hover nas barrinhas */
+header .botaoMenu:hover div {
+   background-color: var(--amarelo);
+   /* Muda a cor das barrinhas para amarelo quando o botão de menu é hover */
+}
+
+/* Movimentos das barrinhas ao passar o mouse */
+header .botaoMenu:hover .ret1 {
+   transform: translateX(-0.2rem);
+   /* Move a primeira barrinha para a esquerda */
+}
+
+header .botaoMenu:hover .ret2 {
+   transform: translateX(0.2rem);
+   /* Move a segunda barrinha para a direita */
+}
+
+header .botaoMenu:hover .ret3 {
+   transform: translateX(-0.3rem);
+   /* Move a terceira barrinha para a esquerda */
+}
+
+/* Estilos para a seção de slogan */
+.slogan {
+   background-color: var(--cinza230);
+   /* Cor de fundo para a seção de slogan */
+   text-align: center;
+   /* Centraliza o texto */
+   height: 3rem;
+   /* Altura da seção */
+   padding: 0 5%;
+   /* Preenchimento interno nas laterais */
+   color: var(--azul);
+   /* Cor do texto */
+   display: flex;
+   /* Flexbox para organizar o conteúdo */
+   align-items: center;
+   /* Alinha os itens verticalmente */
+   justify-content: center;
+   /* Alinha os itens horizontalmente */
+}
+
+/* Estilos para a seção de banner */
+.secaoBanner {
+   background-image: url(img/banner.jpg);
+   /* Imagem de fundo */
+   background-repeat: no-repeat;
+   /* A imagem não vai se repetir */
+   background-size: cover;
+   /* A imagem vai cobrir toda a área disponível */
+   background-position: center;
+   /* A imagem vai se posicionar no centro */
+   height: calc(100vh - 7rem);
+   /* Altura da seção é 100% da tela menos 7rem */
+   padding: 3rem 5%;
+   /* Preenchimento interno nas laterais e em cima/embaixo */
+   display: flex;
+   /* Flexbox para organizar o conteúdo */
+   align-items: center;
+   /* Alinha os itens verticalmente */
+   justify-content: center;
+   /* Alinha os itens horizontalmente */
+}
+
+/* Estilo para o texto destacado dentro do banner */
+.textoDestaque {
+   font-size: 4rem;
+   /* Define o tamanho da fonte do texto destacado */
+}
+
+/* Estilo para o conteúdo dentro da seção do banner */
+.secaoBanner .textos {
+   width: min(50rem, 100%);
+   /* A largura será o menor valor entre 50rem ou 100% da largura */
+   background-color: rgba(255, 255, 255, 0.7);
+   /* Fundo branco com 70% de opacidade */
+   padding: 2rem;
+   /* Preenchimento interno */
+   border: 2px solid white;
+   /* Borda branca */
    border-radius: 20px;
-   overflow: hidden; /* Configura para esconder caso os filhos excedam o tamanho do pai */
-   /* flex-shrink: 0; Capacidade de tamanho pelo flex, para não ser influenciado pelo flex e diminuir o tamanho */
+   /* Bordas arredondadas */
+}
+
+/* Estilo para o título dentro da seção do banner */
+.secaoBanner .textos h1 {
+   margin-bottom: 1rem;
+   /* Margem abaixo do título */
+   color: var(--azulc);
+   /* Cor do título */
+}
+
+/* Estilos para o layout principal da página */
+.indexPrincipal {
+   display: flex;
+   /* Flexbox para organizar os itens */
+   gap: 2rem;
+   /* Espaçamento entre os itens */
+   padding: 2rem 5%;
+   /* Preenchimento interno nas laterais */
+}
+
+/* Estilos para o lado esquerdo da seção principal */
+.indexPrincipal .ladoEsquerdo {
+   width: 25%;
+   /* Largura do lado esquerdo é 25% */
+}
+
+/* Estilos para o lado direito da seção principal */
+.indexPrincipal .ladoDireito {
+   width: 75%;
+   /* Largura do lado direito é 75% */
+}
+
+/* Estilos para o container de produtos */
+.containerProdutos {
+   display: grid;
+   /* Define o container como um grid (grade) */
+   grid-template-columns: repeat(3, 1fr);
+   /* Cria 3 colunas iguais no grid */
+   gap: 1rem;
+   /* Define um espaçamento de 1rem entre os itens do grid */
+   margin: 1.5rem 0;
+   /* 1.5rem de margem acima e abaixo do container */
+}
+
+/* Estilo para os cards de produtos */
+.containerProdutos .card {
+   background-color: white;
+   /* Cor de fundo do card */
+   border-radius: 20px;
+   /* Bordas arredondadas */
+   overflow: hidden;
+   /* Esconde qualquer conteúdo que ultrapasse os limites do card */
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-   /* Sombra para caixa - sequencia de 3 valores, 1 valor: dislocamento (-)esquerda ou (+)direita / 
-   2 valor: dislocamento (-)cima ou (+)baixo / 3 valor: Desfoque / 4 valor:Cor */
+   /* Adiciona sombra ao redor do card */
    transition: box-shadow 0.5s;
+   /* Transição suave para a sombra */
 }
 
-.containerProdutos .card:hover{
+/* Efeito ao passar o mouse sobre o card */
+.containerProdutos .card:hover {
    box-shadow: 0 20px 25px rgba(0, 24, 69, 0.5);
+   /* A sombra aumenta ao passar o mouse */
 }
 
-.containerProdutos .card img{
+/* Estilo para as imagens dentro dos cards */
+.containerProdutos .card img {
    width: 100%;
+   /* A imagem ocupa toda a largura do card */
 }
 
-.containerProdutos .card .tituloProduto{
+/* Estilo para o título do produto dentro do card */
+.containerProdutos .card .tituloProduto {
    margin: 1rem 1rem 0.5rem 1rem;
+   /* Margens para o título do produto */
+   color: var(--azulcc);
+   /* Cor do título */
+}
+
+/* Estilo para o preço do produto */
+.containerProdutos .card .precoProduto {
+   margin: 0 1rem 1rem 1rem;
+   /* Margens para o preço */
+}
+
+/* Estilos para o footer (rodapé) */
+footer {
+   background-color: var(--azul);
+   /* Cor de fundo do rodapé */
+   padding: 1rem 5%;
+   /* Preenchimento interno nas laterais */
+   display: flex;
+   /* Flexbox para organizar os itens */
+   align-items: center;
+   /* Alinha os itens verticalmente */
+   justify-content: center;
+   /* Alinha os itens horizontalmente */
+}
+
+/* Estilo para o texto do rodapé */
+footer p {
+   color: white;
+   /* Cor do texto do rodapé */
+}
+
+/* Estilos para a lista de filtros */
+.listaFiltros {
+   list-style-type: none;
+   margin-top: 1.5rem;
+   display: grid;
+   gap: 0.5rem;
+   grid-template-columns: 1fr;
+   /* Cria 1 colunas iguais no grid */
+}
+
+.listaFiltros li {
+   border: 1px solid var(--cinza220); /* Corrigido o valor da cor */
+   padding: 0.5rem;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background 0.5s, color 0.5s;
+}
+
+.listaFiltros li:hover {
+   background-color: white;
    color: var(--azulcc);
 }
 
-.containerProdutos .card .precoProduto{
-   margin: 0 1rem 1rem 1rem;
+/* Responsividade para telas menores que 1250px */
+@media screen and (max-width: 1250px) {
+   .containerProdutos {
+      grid-template-columns: repeat(2, 1fr);
+      /* Cria 2 colunas iguais no grid */
+   }
 }
 
-footer{
-   background-color: var(--azul);
-   padding: 1rem 5%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-footer p{
-   color: white;
-}
-
-@media screen and (max-width: 950px){ /* Esse grupo defini propriedades específicas para a largura de 950px */
-
-   header .botaoMenu{
+/* Responsividade para telas menores que 950px (mobile) */
+@media screen and (max-width: 950px) {
+   header .botaoMenu {
       display: flex;
+      /* Torna o botão de menu visível em telas menores */
    }
 
-   header nav{
+   header nav {
       position: fixed;
+      /* O menu fica fixo na tela */
       background-color: var(--cinza245);
+      /* Cor de fundo para o menu */
       top: 0;
+      /* Fixa o menu no topo */
       bottom: 0;
+      /* Fixa o menu na parte inferior */
       flex-direction: column;
+      /* Organiza os itens do menu em coluna */
       align-items: flex-start;
+      /* Alinha os itens à esquerda */
       gap: 0;
-      padding: 3rem; /* Margem interna */
+      /* Sem espaçamento entre os itens */
+      padding: 3rem;
+      /* Preenchimento interno */
       width: 100%;
+      /* Largura total da tela */
       right: -100%;
+      /* O menu começa fora da tela */
       transition: right 0.5s;
+      /* Transição suave para mostrar o menu */
       z-index: 1;
+      /* Garantir que o menu fique sobre outros elementos */
    }
 
-   header .topoMenu{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      margin-bottom: 1rem;
-   }
-
-   header .fecharMenu{
-      border: none;
-      background-color: transparent;
-      color: var(--azulcc);
-      cursor: pointer;
-   }
-
-   header .creditosMenu{
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin-top: 2rem;
-   }
-
-   header a{
-      color: var(--cinza100);
-   }
-   
-   header a:hover{
-      color: var(--azulc);
-   }
-
-   header nav a{
+   header nav a {
       border-bottom: 1px solid var(--cinza220);
+      /* Adiciona uma borda inferior nos links */
       display: flex;
       width: 100%;
       padding: 1rem;
+      /* Preenchimento interno dos links */
       transition: background 0.5s;
+      /* Transição suave no fundo ao passar o mouse */
    }
 
-   header nav a:hover{
+   header nav a:hover {
       background-color: white;
+      /* Cor de fundo ao passar o mouse */
    }
 
-   .textoDestaque{
+   .textoDestaque {
       font-size: 2rem;
+      /* Tamanho da fonte reduzido */
    }
 
-   .indexPrincipal{
+   .indexPrincipal {
       flex-direction: column;
+      /* Organiza os itens em coluna */
    }
 
    .indexPrincipal .ladoEsquerdo,
-   .indexPrincipal .ladoDireito{
+   .indexPrincipal .ladoDireito {
       width: 100%;
+      /* Ambos os lados ocupam 100% da largura */
+   }
+
+   /* Se utilizar flex 
+   Estilo para os cards de produtos 
+    .containerProdutos .card {
+      width: calc(33% - 1rem);
+      Define a largura dos cards como 33% do espaço, descontando 1rem para espaçamento 
+   }*/
+
+   .containerProdutos {
+      grid-template-columns: repeat(3, 1fr);
+      /* Cria 3 colunas no grid */
+   }
+
+   .listaFiltros {
+      grid-template-columns: repeat(4, 1fr);
+      /* Cria 4 colunas no grid */
    }
 
 }
 
+/* Responsividade para telas menores que 650px */
+@media screen and (max-width: 650px) {
+
+   /* Se utilizar flex
+   Estilo para os cards de produtos 
+    .containerProdutos .card {
+      width: 100%;
+      Define a largura dos cards como 100% do espaço }*/
+
+   .containerProdutos {
+      grid-template-columns: repeat(2, 1fr);
+      /* Cria 2 colunas no grid */
+   }
+
+   .listaFiltros {
+      grid-template-columns: repeat(2, 1fr);
+      /* Cria 4 colunas no grid */
+   }
+
+}
+
+/* Responsividade para telas menores que 450px */
+@media screen and (max-width: 450px) {
+
+   /* Se utilizar flex 
+   Estilo para os cards de produtos 
+    .containerProdutos .card {
+      width: calc(50% - 1rem);
+      Define a largura dos cards como 50% do espaço, descontando 1rem para espaçamento 
+   } */
+
+   .containerProdutos {
+      grid-template-columns: 1fr;
+      /* Cria uma coluna no grid */
+   }
+
+   .listaFiltros {
+      grid-template-columns: 1fr;
+      /* Cria 4 colunas no grid */
+   }
+
+}
