@@ -28,6 +28,8 @@
    /* Define o peso da fonte (normal) */
    font-style: normal;
    /* Define o estilo da fonte como normal */
+   scroll-behavior: smooth;
+   /* Define ao scrol da página uma rolagem de página suave */
 }
 
 /* Estilizando o corpo da página */
@@ -352,6 +354,12 @@ footer p {
    background-color: white;
    color: var(--azulcc);
 }
+
+.formContato{
+   background-color: var(--cinza230);
+   padding: 2rem 5%;
+}
+
 
 /* Responsividade para telas menores que 1250px */
 @media screen and (max-width: 1250px) {

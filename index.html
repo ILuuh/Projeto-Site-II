@@ -30,7 +30,7 @@
 
             <a href="index.html">Início</a>
             <a href="quemsomos.html">Quem somos</a>
-            <a href="produtos.html">Produtos</a>
+            <a href="#secaoProdutos">Produtos</a>
             <a href="contato.html">Contato</a>
 
             <p class="creditosMenu">© 2025 Nosso site. Todos os direitos reservados</p>
@@ -72,7 +72,7 @@
 
         </section>
 
-        <section class="ladoDireito">
+        <section class="ladoDireito" id="secaoProdutos">
 
             <h1>Produtos</h1>
 
@@ -126,8 +126,22 @@
 
     </main>
 
+    <form action="" method="post" class="formContato">
+
+        <h1>Contato</h1>
+
+        <p>Preencha os campos a seguir para entrar em contato conosco:</p>
+
+        <div class="linhacampo">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" autocomplete="name"
+                placeholder="Por favor, informe seu nome completo..." required>
+        </div>
+
+    </form>
+
     <footer>
-        <p>2025 © Nossa Loja. Todos os direitos reservados</p>
+        <p><span id="anoAtual"></span> © Nossa Loja. Todos os direitos reservados</p>
     </footer>
 
 </body>
