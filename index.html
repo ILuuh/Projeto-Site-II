@@ -74,7 +74,7 @@
 
         <section class="ladoDireito" id="secaoProdutos">
 
-            <h1>Produtos</h1>
+            <h1 class="titulo">Produtos</h1>
 
             <div class="containerProdutos">
 
@@ -128,14 +128,35 @@
 
     <form action="" method="post" class="formContato">
 
-        <h1>Contato</h1>
+        <h1 class="titulo">Contato</h1>
 
         <p>Preencha os campos a seguir para entrar em contato conosco:</p>
 
         <div class="linhacampo">
-            <label for="nome">Nome completo:</label>
+            <label for="nome" class="obrigatorio">Nome completo:</label>
             <input type="text" id="nome" name="nome" autocomplete="name"
                 placeholder="Por favor, informe seu nome completo..." required>
+        </div>
+
+        <div class="linhacampo">
+            <label for="telefone" class="obrigatorio">Telefone:</label>
+            <input type="tel" inputmode="tel" id="telefone" name="telefone" autocomplete="tel"
+                placeholder="Por favor, informe seu número de telefone..." required>
+        </div>
+
+        <div class="linhacampo">
+            <label for="email" class="obrigatorio">E-mail:</label>
+            <input type="email" inputmode="email" id="email" name="email" autocomplete="email"
+                placeholder="Por favor, informe seu e-mail..." required>
+        </div>
+
+        <div class="linhacampo">
+            <label for="motivo" class="obrigatorio">Motivo:</label>
+            <select name="motivo" id="motivo">
+                <option value="0">Venda de produtos</option>
+                <option value="1">Críticas</option>
+                <option value="2">Elogios ou sugestões</option>
+            </select>
         </div>
 
     </form>
