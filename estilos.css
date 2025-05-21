@@ -45,6 +45,10 @@ a {
    /* Remove o sublinhado dos links */
 }
 
+.textoAmarelo{
+   color: var(--amarelo);
+}
+
 /* Estilos para o header (cabeçalho) */
 header {
    height: 4rem;
@@ -438,6 +442,38 @@ footer p {
    height: 2rem;
    background-color: var(--amarelo);
    border-radius: 50px;
+}
+
+/* -------------------- Página Quem Somos ------------------------ */
+
+.mainQuemSomos{
+   padding: 4rem;
+}
+
+.div1{
+   width: 4rem;
+   height: 4rem;
+   background-color: var(--azulcc);
+   animation: animaquadrado 1s infinite alternate;
+}
+
+.div2{
+   width: 3rem;
+   height: 3rem;
+   background-color: var(--azul);
+   animation: animaquadrado 1s cubic-bezier(0.96, 0.35, 0.23, 0.74) 0.5s infinite alternate;
+}
+
+@keyframes animaquadrado{
+
+   /* Para começar pode usar 0% ou from */
+
+   /* Ou to */100%{
+      transform: scale(140%) translateX(5rem);
+      background-color: var(--amarelo);
+      border-radius: 20px;
+   }
+
 }
 
 /* Responsividade para telas menores que 1250px */
