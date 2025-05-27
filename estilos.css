@@ -476,6 +476,74 @@ footer p {
 
 }
 
+.containerAnimacao{
+   border: 1px solid red;
+   width: min(50rem, 100%);
+   aspect-ratio: 16 / 9;
+   position: relative;
+   overflow: hidden;
+}
+
+.containerAnimacao .fundo{
+   width: 100%;
+}
+
+.containerAnimacao .retangulos{
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   width: 100%;
+   animation: animaretangulos 10s ease infinite;
+}
+
+@keyframes animaretangulos{
+   0%, 100%{
+      top: -67%;
+   }
+
+   20%, 80%{
+      top: 0;
+   }
+}
+
+.containerAnimacao .sofa{
+   position: absolute;
+   z-index: 3;
+   width: 45%;
+   top: 35%;
+   left: 27%;
+   animation: animasofa 10s ease infinite;
+}
+
+@keyframes animasofa{
+   0%{
+      width: 85%;
+      top: 102%;
+      left: 7%;
+   }
+
+   20%, 80%{
+      width: 45%;
+      top: 35%;
+      left: 27%;
+   }
+
+   100%{
+      width: 45%;
+      top: 35%;
+      left: -47%;
+   }
+}
+
+.containerAnimacao .relogio{
+   position: absolute;
+   z-index: 2;
+   width: 12%;
+   top: 19%;
+   left: 43.5%;
+}
+
 /* Responsividade para telas menores que 1250px */
 @media screen and (max-width: 1250px) {
    .containerProdutos {

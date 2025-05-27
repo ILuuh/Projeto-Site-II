@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Desenho" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 935 420">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#New_Gradient_Swatch_61);
+      }
+
+      .st1 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st2 {
+        fill: url(#New_Gradient_Swatch_7);
+      }
+
+      .st3 {
+        fill: url(#New_Gradient_Swatch_62);
+      }
+
+      .st4 {
+        fill: #f59100;
+      }
+
+      .st5 {
+        fill: url(#New_Gradient_Swatch_74);
+      }
+
+      .st6 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st7 {
+        fill: url(#New_Gradient_Swatch_73);
+      }
+
+      .st8 {
+        fill: url(#New_Gradient_Swatch_72);
+      }
+
+      .st9 {
+        fill: url(#New_Gradient_Swatch_6);
+      }
+
+      .st10 {
+        fill: url(#New_Gradient_Swatch_63);
+      }
+
+      .st11 {
+        fill: url(#New_Gradient_Swatch_71);
+      }
+
+      .st12 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_7" data-name="New Gradient Swatch 7" x1="467.5" y1=".42" x2="467.5" y2="212.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff5af"/>
+      <stop offset=".13" stop-color="#ffeb00"/>
+      <stop offset=".53" stop-color="#ffc800"/>
+      <stop offset="1" stop-color="#fab900"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_71" data-name="New Gradient Swatch 7" x1="349.74" y1=".42" x2="349.74" y2="212.43" xlink:href="#New_Gradient_Swatch_7"/>
+    <linearGradient id="New_Gradient_Swatch_72" data-name="New Gradient Swatch 7" x1="275.92" y1=".42" x2="275.92" y2="212.43" xlink:href="#New_Gradient_Swatch_7"/>
+    <linearGradient id="New_Gradient_Swatch_73" data-name="New Gradient Swatch 7" x1="585.26" y1=".42" x2="585.26" y2="212.43" xlink:href="#New_Gradient_Swatch_7"/>
+    <linearGradient id="New_Gradient_Swatch_74" data-name="New Gradient Swatch 7" x1="659.08" y1=".42" x2="659.08" y2="212.43" xlink:href="#New_Gradient_Swatch_7"/>
+    <linearGradient id="linear-gradient" x1="467.5" y1="310.37" x2="467.5" y2="421.48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffeb00"/>
+      <stop offset="1" stop-color="#ffc800"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="137.97" y1="101.88" x2="218.59" y2="202.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffec00"/>
+      <stop offset="1" stop-color="#f6a500"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_6" data-name="New Gradient Swatch 6" x1="102.98" y1="119.56" x2="102.98" y2="342.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffeb00"/>
+      <stop offset="1" stop-color="#ffc800"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient2" x1="824.08" y1="160.72" x2="678.3" y2="160.72" xlink:href="#linear-gradient1"/>
+    <linearGradient id="New_Gradient_Swatch_61" data-name="New Gradient Swatch 6" x1="832.02" x2="832.02" xlink:href="#New_Gradient_Swatch_6"/>
+    <linearGradient id="New_Gradient_Swatch_62" data-name="New Gradient Swatch 6" x1="289.93" y1="169.73" x2="289.93" y2="252.77" xlink:href="#New_Gradient_Swatch_6"/>
+    <linearGradient id="New_Gradient_Swatch_63" data-name="New Gradient Swatch 6" x1="645.07" y1="169.73" x2="645.07" y2="252.77" xlink:href="#New_Gradient_Swatch_6"/>
+  </defs>
+  <g>
+    <path class="st2" d="M467.5.04s-58.02-2.09-107.61,22.7l45.1,188.29h125.01l45.1-188.29C525.52-2.05,467.5.04,467.5.04Z"/>
+    <path class="st11" d="M345.65,211.03l-51.16-188.29s20.7-13.18,65.4,0l45.1,188.29h-59.34Z"/>
+    <path class="st8" d="M345.65,211.03l-51.16-188.29s-146.65-57.59-61.98,188.29h113.14Z"/>
+    <path class="st7" d="M589.35,211.03l51.16-188.29s-20.7-13.18-65.4,0l-45.1,188.29h59.34Z"/>
+    <path class="st5" d="M589.35,211.03l51.16-188.29s146.64-57.59,61.98,188.29h-113.15Z"/>
+    <path class="st4" d="M345.65,212.65c-.71,0-1.36-.47-1.55-1.19l-51.16-188.29c-.23-.86.27-1.75,1.13-1.98.86-.24,1.74.27,1.98,1.13l51.16,188.29c.23.86-.27,1.75-1.13,1.98-.14.04-.28.06-.42.06Z"/>
+    <path class="st4" d="M404.99,212.65c-.73,0-1.39-.5-1.57-1.24l-45.1-188.29c-.21-.87.33-1.74,1.19-1.95.87-.21,1.74.33,1.94,1.19l45.1,188.29c.21.87-.33,1.74-1.19,1.95-.13.03-.25.04-.38.04Z"/>
+    <path class="st4" d="M530.01,212.65c-.13,0-.25-.01-.38-.04-.87-.21-1.4-1.08-1.19-1.95l45.1-188.29c.21-.87,1.08-1.4,1.94-1.19.87.21,1.4,1.08,1.19,1.95l-45.1,188.29c-.18.74-.84,1.24-1.57,1.24Z"/>
+    <path class="st4" d="M589.35,212.65c-.14,0-.28-.02-.42-.06-.86-.23-1.37-1.12-1.13-1.98l51.16-188.29c.23-.86,1.12-1.37,1.98-1.13.86.23,1.37,1.12,1.13,1.98l-51.16,188.29c-.2.72-.85,1.19-1.55,1.19Z"/>
+  </g>
+  <polygon class="st12" points="467.5 310.79 121.47 310.79 121.47 420 467.5 420 813.53 420 813.53 310.79 467.5 310.79"/>
+  <g>
+    <path class="st6" d="M167.67,233.87c108.91-30.8,104.03-111.02,38.74-137.86-65.29-26.84-145.37,18.98-145.37,18.98l106.63,118.88Z"/>
+    <path class="st9" d="M205.95,178.16c0,71.16-84.49,55.6-84.49,105.06v136.78h-34.45c-46.81,0-134.41-185.6-54.99-280.09,22.06-26.83,46.19-36.69,79.74-36.69,52.01,0,94.19,35.29,94.19,74.94Z"/>
+    <path class="st4" d="M150.58,186.5c0,23.91-20.19,43.3-43.31,43.3s-25.37,12.39-25.37,35.69v122.31s-114.85-244.62,25.37-244.62c23.93,0,43.31,19.39,43.31,43.32Z"/>
+  </g>
+  <g>
+    <path class="st1" d="M767.33,233.87c-108.91-30.8-104.03-111.02-38.74-137.86,65.29-26.84,145.38,18.98,145.38,18.98l-106.64,118.88Z"/>
+    <path class="st0" d="M729.05,178.16c0,71.16,84.49,55.6,84.49,105.06v136.78h34.45c46.81,0,134.41-185.6,54.99-280.09-22.06-26.83-46.19-36.69-79.74-36.69-52.02,0-94.19,35.29-94.19,74.94Z"/>
+    <path class="st4" d="M784.42,186.5c0,23.91,20.19,43.3,43.31,43.3s25.37,12.39,25.37,35.69v122.31s114.85-244.62-25.37-244.62c-23.93,0-43.31,19.39-43.31,43.32Z"/>
+  </g>
+  <g>
+    <path class="st3" d="M467.5,168.35v142.45H124.9c-6.95-.06-12.55-5.7-12.55-12.66v-36.67c0-6.97,5.6-12.6,12.55-12.66,0,0,44.58-5.27,75.89-41.61,31.32-36.34,126.26-59.54,266.71-38.84Z"/>
+    <path class="st10" d="M467.5,168.35v142.45h342.6c6.95-.06,12.55-5.7,12.55-12.66v-36.67c0-6.97-5.6-12.6-12.55-12.66,0,0-44.58-5.27-75.89-41.61-31.32-36.34-126.26-59.54-266.71-38.84Z"/>
+    <path class="st4" d="M467.5,312.41c-.89,0-1.61-.72-1.61-1.62v-142.45c0-.89.72-1.62,1.61-1.62s1.61.72,1.61,1.62v142.45c0,.89-.72,1.62-1.61,1.62Z"/>
+  </g>
+</svg>

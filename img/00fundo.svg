@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Desenho" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #dcd287;
+      }
+
+      .st1 {
+        fill: url(#New_Gradient_Swatch_5);
+      }
+
+      .st2 {
+        fill: #ebebeb;
+      }
+
+      .st3 {
+        fill: url(#New_Gradient_Swatch_4);
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_5" data-name="New Gradient Swatch 5" x1="960" y1="-3.5" x2="960" y2="642.36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff5c8"/>
+      <stop offset="1" stop-color="#fff5c8"/>
+    </linearGradient>
+    <radialGradient id="New_Gradient_Swatch_4" data-name="New Gradient Swatch 4" cx="945.32" cy="874.6" fx="945.32" fy="874.6" r="900.64" gradientTransform="translate(-11.98 480.37) scale(1.03 .45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".48" stop-color="#fbfbfb"/>
+      <stop offset=".83" stop-color="#f2f2f2"/>
+      <stop offset="1" stop-color="#ebebeb"/>
+    </radialGradient>
+  </defs>
+  <rect class="st1" x="0" y="0" width="1920" height="645"/>
+  <rect class="st0" y="645" width="1920" height="22.5"/>
+  <rect class="st3" y="667.5" width="1920" height="412.5"/>
+  <g>
+    <path class="st2" d="M0,712.08c36.34-14.86,72.68-29.72,109.01-44.58H13.51c-4.5,1.66-9.01,3.31-13.51,4.97v39.61Z"/>
+    <path class="st2" d="M0,805.28c90.75-45.93,181.5-91.85,272.24-137.78h-95.51c-58.91,26.18-117.82,52.35-176.74,78.53v59.26Z"/>
+    <path class="st2" d="M0,956.61c145.16-96.37,290.32-192.73,435.48-289.11h-95.51c-113.32,63.63-226.64,127.26-339.97,190.88v98.23Z"/>
+    <path class="st2" d="M171.1,1080c142.54-137.5,285.09-274.99,427.62-412.5h-95.51C335.46,795.39,167.73,923.31,0,1051.21v28.79h171.1Z"/>
+    <path class="st2" d="M528.05,1080c77.97-137.5,155.94-275,233.9-412.5h-95.51c-115.76,137.49-231.5,275-347.25,412.5h208.86Z"/>
+    <path class="st2" d="M885.01,1080c13.4-137.5,26.8-275,40.19-412.5h-95.51c-51.18,137.5-102.36,275-153.53,412.5h208.86Z"/>
+    <path class="st2" d="M1241.97,1080c-51.18-137.5-102.35-275-153.53-412.5h-95.51c13.37,137.5,26.78,275,40.18,412.5h208.86Z"/>
+    <path class="st2" d="M1598.94,1080c-115.75-137.5-231.49-275.01-347.25-412.5h-95.51c77.97,137.5,155.94,275,233.91,412.5h208.86Z"/>
+    <path class="st2" d="M1920,1052.63c-168.36-128.37-336.72-256.75-505.07-385.13h-95.51c142.56,137.47,285.09,274.99,427.62,412.5h172.97v-27.37Z"/>
+    <path class="st2" d="M1920,859.43c-113.95-63.98-227.89-127.96-341.84-191.93h-95.51c145.78,96.79,291.56,193.57,437.35,290.35v-98.42Z"/>
+    <path class="st2" d="M1920,746.86c-59.53-26.46-119.07-52.91-178.61-79.36h-95.51c91.37,46.25,182.75,92.49,274.12,138.73v-59.37Z"/>
+    <path class="st2" d="M1920,673.16c-5.13-1.89-10.26-3.77-15.38-5.66h-95.5c36.96,15.12,73.92,30.23,110.89,45.34v-39.69Z"/>
+  </g>
+</svg>
