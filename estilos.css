@@ -516,6 +516,10 @@ footer p {
    animation: animasofa 10s ease infinite;
 }
 
+.containerAnimacao .sofa:hover{
+   animation-play-state: paused;
+}
+
 @keyframes animasofa{
    0%{
       width: 85%;
@@ -542,6 +546,97 @@ footer p {
    width: 12%;
    top: 19%;
    left: 43.5%;
+   animation: animarelogio 10s cubic-bezier(0.64, 0.36, 0, 1.04) infinite;
+}
+
+.containerAnimacao .relogio:hover{
+   animation-play-state: paused;
+}
+
+@keyframes animarelogio{
+
+   0%, 20%{
+      top: 40%;
+      opacity: 0;
+   }
+
+   21%{
+      opacity: 1;
+      transform: rotate(0);
+   }
+
+   40%{
+      top: 19%;
+      transform: rotate(10turn) /* deg ou turn, turn e voltas de 360. */;
+   }
+
+   80%{
+      top: 19%;
+      transform: rotate(10turn);
+      left: 43.5%;
+   }
+
+   100%{
+      left: 101%;
+      transform: rotate(20turn);
+   }
+
+
+}
+
+.gridPai{
+   display: grid;
+   width: 95%;
+   height: 35rem;
+   border: 1px solid red;
+   margin-top: 2rem;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-areas: "f1 f2 f2" 
+                        "f3 f4 f5" 
+                        "f6 f6 f5"
+                        "f7 f8 f5"
+                        "f9 f9 f9";
+   gap: 1rem;
+}
+
+.gridPai *{
+   border: 1px solid blue;
+}
+
+.gridPai .f1{
+   grid-area: f1; /* codinome no grid */
+}
+
+.gridPai .f2{
+   grid-area: f2;
+}
+
+.gridPai .f3{
+   grid-area: f3;
+}
+
+.gridPai .f4{
+   grid-area: f4;
+}
+
+.gridPai .f5{
+   grid-area: f5;
+}
+
+.gridPai .f6{
+   grid-area: f6;
+}
+
+.gridPai .f7{
+   grid-area: f7;
+}
+
+.gridPai .f8{
+   grid-area: f8;
+}
+
+.gridPai .f9{
+   grid-area: f9;
 }
 
 /* Responsividade para telas menores que 1250px */
